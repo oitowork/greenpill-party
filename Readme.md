@@ -1,10 +1,10 @@
 <br />
 <div align="center">
   <a href="https://coordenation.party">
-    <img src="image/coordination.party-logo.png" alt="Gitcoin coordenation.party"  height="80">
+    <img src="image/coordination.party-logo.png" alt="Gitcoin coordination.party"  height="80">
   </a>
 
-  <h3 align="center">Gitcoin Coordenation.party</h3>
+  <h3 align="center">Gitcoin Coordination.party</h3>
 
   <p align="center">
     production: 
