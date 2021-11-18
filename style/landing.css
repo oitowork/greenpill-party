@@ -466,7 +466,7 @@ hr {
 #hero-version-2 {
     height: 80vh;
     padding: 1em;
-    background: url('../image/hero-background.gif') center center;
+    background: url('../../image/hero-background.gif') center center;
     background-size: 821px;
     background-repeat: no-repeat;
     background-position: center;
@@ -497,20 +497,20 @@ hr {
 
 /* end hero-whith-background */
 
-/* coordenation.party */
+/* coordination.party */
 
-.coordenation-hero {
+.coordination-hero {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.review-coordenation .review-card .review-title{
+.review-coordination .review-card .review-title{
     color:#FFCC00;
     font-size: 64px;
 }
 
-.coordenation-hero .subtitle {
+.coordination-hero .subtitle {
     color: #6F3FF5;
 
 }
@@ -528,26 +528,30 @@ hr {
 }
 
 
-.coordenation-players {
-    align-content: center;
-    justify-content: space-between;
+.coordination-players {
     display: flex;
-    flex-direction: row;
+    align-content: center;
+    justify-content:center;
+    margin-top: 175px;
+    margin-bottom: 242px;
+    margin-left: 20%;
+    margin-right:20% ;
 }
 
-.coordenation-box-list {
+.coordination-box-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
-    gap: 20px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 100px;
+    align-items: center;
 }
 
 
-.coordenation-box-list li {
+.coordination-box-list li {
     justify-content: center;
     text-align: center;
     list-style: none;
 }
-.coordenation-card {
+.coordination-card {
     
     display: flex;
     flex-direction: column;
@@ -559,16 +563,16 @@ hr {
     align-items: center;
 }
 
-.coordenation-card_title {
+.coordination-card_title {
     color: #C9B8FF;
 }
 
-.coordenation-card:hover {
+.coordination-card:hover {
     background-color:#0E0333;
     color: #FFCC00; 
 }
 
-.coordenation-card_image .tip-box>path:hover {
+.coordination-card_image .tip-box>path:hover {
     fill: #FFCC00;
 }
 a .tip-box:hover, a img .tip-box>path {
@@ -577,19 +581,96 @@ a .tip-box:hover, a img .tip-box>path {
 }
 
 /* SVG Icons Hover */
-
-a img svg:hover #pay,
-a img svg:hover #grant,
-a img svg:hover #tokenstream,
-a img svg:hover #recruiter { 
-    fill: #FFCC00;
+.coord-icon {
+    display: inline-block;
+    width: 118px;
+    height: 160px;
+    background-size: cover;
 }
 
+
+.coord-pay{
+    width: 118px; 
+    height:160px;
+    background-image: url(../image/pay-box.svg)
+}
+.coord-pay:hover{
+    background-image: url(../image/pay-box-hover.svg)
+}
+
+.coord-recruiter{
+    width: 162px; 
+    height: 160px;
+    background-image: url(../image/recruit-box.svg)
+}
+.coord-recruiter:hover{
+    background-image: url(../image/recruit-box-hover.svg)
+}
+
+.coord-tip{
+    width: 160px; 
+    height:160px;
+    background-image: url(../image/tip-box.svg)
+}
+.coord-tip:hover{
+    background-image: url(../image/tip-box-hover.svg)
+}
+
+.coord-grant{
+    width: 179px; 
+    height:160px;
+    background-image: url(../image/grant-box.svg)}
+.coord-grant:hover{
+    background-image: url(../image/grant-box-hover.svg)
+}
+
+.coord-tokenstream{
+    width: 205px; 
+    height:160px;
+    background-image: url(../image/token-stream-box.svg)}
+.coord-tokenstream:hover{
+    background-image: url(../image/token-stream-box-hover.svg)}
+
+.review-coordination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review-card {
+    text-align: center;
+}
+.review-title {
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 71px;
+    text-align: center;
+    color: #FFCC00;
+}
+
+.review-description {
+    margin: 0 431px 10px;
+    color: #C9B8FF;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+.review-card author {
+    margin-top: 5px;
+    color: #6F3FF5;
+}
+
+.review-author{
+    justify-content: center;
+}
 
 /* Responsive Style */
 @media (max-width: 1280px) {
 
-    /*Coordenation.party*/
+    /*coordination.party*/
     .hero-container {
         flex-direction: column;
         text-align: center;
@@ -601,16 +682,16 @@ a img svg:hover #recruiter {
         margin: 0;
     }
 
-    .coordenation-hero-description {
+    .coordination-hero-description {
         margin: 0;
     }
 
-    .coordenation-hero-description .title {
+    .coordination-hero-description .title {
         font-size: 64px;
         color: #FFCC00;
     }
 
-    .coordenation-hero-description .subtitle {
+    .coordination-hero-description .subtitle {
         font-size: 64px;
         color: #FFCC00;
     }
