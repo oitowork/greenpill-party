@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Miriam Libre', sans-serif; */
+    max-width: 100%;
+    margin: auto;
+    background-color: #0E0333;
+    color: #fff;
+}
+
+@media (min-width: 1313px) {
+    body {
+        font-size: 140%;
+    }
+}
+
+@media (max-width: 1600px) {
+    body {
+        font-size: 120%;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 688px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+header {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.header-nav-menu {
+    margin-top: 47px;
+    display: flex;
+}
+
+.header-nav-menu li {
+    list-style: none;
+}
+
+
+
+.link-landing {
+    outline: none;
+    cursor: pointer;
+    padding: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+a.link-landing {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    outline: none;
+}
+
+.link-landing select {
+    color: #0E0333;
+}
+
+main {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* HERO  */
+
+
+.schelling-hero {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+}
+
+
+
+.hero-image {
+    width: 420px;
+    height: 420px;
+    margin-left: 30px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.schelling-hero-description {
+    margin-left: 77px;
+}
+
+.schelling-hero-description .title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 96.1%;
+    color: #6F3FF5;
+    width: 518px
+}
+
+.schelling-hero-description .subtitle {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 63px;
+    color: #0E0333;
+}
+
+/* END HERO */
+/* 
+
+
+/* @component: speaker-list  */
+.speakers-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 168px;
+}
+
+.speakers-container {
+    display: flex;
+    flex-direction: column;
+    width: 870px;
+}
+
+.speaker-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+    gap: 10px 100px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+.speakers-container .title {
+    display: flex;
+    justify-content: center;
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 72px;
+    text-align: center;
+    color: #6F3FF5;
+    margin-bottom: 82px;
+}
+
+.speaker-card {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.2em;
+}
+
+.speaker-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker-image {
+    display: flex;
+    position: relative;
+}
+
+.speaker-image img {
+    display: flex;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.speaker-info .name {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #6F3FF5;
+}
+
+.speaker-info .title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+/* end speaker-list */
+
+/* start sponsors section */
+
+.sponsors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+}
+
+.sponsors-container .title {
+    display: flex;
+    justify-content: center;
+    color: #6F3FF5;
+}
+
+.sponsors-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 87px;
+}
+
+.sponsors-list a {
+    cursor: pointer;
+
+}
+
+.sponsors-list li:nth-child(2) {
+    margin: 0 124px;
+}
+
+.sponsors-card {
+    list-style: none;
+}
+
+.image-sponsors {
+    border: 8px solid #5BF1CD;
+    border-radius: 50%;
+    width: 182px;
+    height: 182px;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+/* end sponsors section */
+
+footer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    background-color: #0E0333;
+}
+
+.section-title {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 100%;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    margin-top: 248px;
+
+    /* padding: 56px; */
+}
+
+.section-container .section-image {
+    width: 474px;
+    height: 448px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container_call_action {
+    justify-content: center;
+    display: flex;
+    margin: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description {
+    max-width: 700px;
+    font-family: Montserrat;
+    font-size: 22px;
+    line-height: 160%;
+
+}
+
+.section-conainer_info {
+    display: flex;
+    max-width: 775px;
+    flex-direction: column;
+    justify-items: left;
+    margin-left: 50px;
+}
+
+.section-conainer_info .title {
+    max-width: 308px;
+    color: #6F3FF5;
+    margin-bottom: 14px;
+}
+
+.section-conainer_info .description {
+    font-size: 22px;
+    font-family: Montserrat;
+    text-align: left;
+    line-height: 40px;
+}
+
+.text-menu {
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.button-call-to-action {
+    width: 640px;
+    height: 120px;
+    border-radius: 8px;
+    background: #6F3FF5;
+    color: white;
+    text-transform: uppercase;
+    font-family: Miriam Libre;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    border-color: transparent;
+    margin-top: 20px;
+}
+
+.button-call-to-action .description {
+    width: 791px;
+}
+
+#afterparty {
+    justify-content: center;
+}
+
+.gitcoin-brand {
+    display: flex;
+
+    padding-top: 154px;
+    padding-bottom: 154px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gitcoin-brand img {
+    width: 178px;
+}
+
+/* Start HR Style */
+
+#hr-style-component::before, #hr-style-component::after { content: ''; }
+
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+
+.line {
+    height:0px;
+    border-radius: 2px;
+    color: #0E0333;
+    border: 7px solid #0E0333;
+    width: 100%;
+}
+
+.line.one {
+    border: 17px solid #0E0333;
+}
+
+.line.two {
+    border: 27px solid #0E0333;
+}
+/* end HR Style */
+
+/* start hero-whith-background */
+.logo {
+    margin-top: 34px;
+    margin-left: 32px;
+    flex: 1;
+}
+.nav-brand img {
+    width: 74px;
+    height:74px;
+}
+
+#hero-version-2 {
+    height: 80vh;
+	padding: 1em;
+	background: url('../image/hero-background.gif') center center ;
+	background-size: 821px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hero-version-2 .hero-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-version-2 .schelling-hero-description .title {
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero-version-2 .schelling-hero-description .subtitle {
+    font-size: 1.5em;
+    justify-content: center;
+    text-align: center;
+}
+#hero-version-2 .schelling-hero-description {
+    margin: 0;
+}
+
+/* end hero-whith-background */
+
+/* coordenation.party */
+
+.coord-yellow {
+    color:#FFCC00;
+}
+
+.coord-violet {
+    color: #6F3FF5;
+}
+
+.coord-violet-200 { 
+    color: #C9B8FF;
+
+}
+
+
+/* Responsive Style */
+@media (max-width: 1280px) {
+
+    /*SCHELLING P0INT*/
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .hero-image {
+        margin: 0;
+    }
+
+    .schelling-hero-description {
+        margin: 0;
+    }
+
+    .schelling-hero-description .title {
+        font-size: 64px;
+        color:#FFCC00;
+    }
+
+    .schelling-hero-description .subtitle {
+        font-size: 64px;
+        color:#FFCC00;
+    }
+
+    /* The Conference*/
+    .section-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-conainer_info {
+        margin: 30px 0;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    section.section-container figure {
+        width: 50%;
+    }
+
+    .sponsors-list {
+        gap: 20px;
+    }
+
+    .sponsors-list li:nth-child(2) {
+        margin: 0;
+    }
+
+    .section-container_call_action {
+        margin: 100px 10px;
+    }
+
+    .button-call-to-action {
+        width: 60%;
+    }
+}
+
+@media (max-width: 688px) {
+    header {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .schelling-hero {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    section.sponsors-container figure {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #hero-version-2 {
+        height: 120vh;
+        background-size: 414px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .schelling-hero-description .title,
+    .hero-image,
+    .section-container .section-image {
+        width: 100%;
+    }
+
+    .header-nav-menu {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .header-nav-menu li {
+        margin-bottom: 10px;
+    }
+
+    .hero-container,
+    .section-container {
+        margin-top: 50px;
+    }
+
+    .speakers-container .title {
+        margin-bottom: 50px;
+    }
+
+    .schelling-hero-description .title,
+    .section-title,
+    .speakers-container .title {
+        font-size: 2rem;
+    }
+
+    .schelling-hero-description .subtitle,
+    .section-conainer_info .description {
+        font-size: 1.5rem;
+    }
+
+    .section-conainer_info .description {
+        padding: 0.5em;
+    }
+
+    .button-call-to-action {
+        width: 95%;
+    }
+
+    #hero-version-2 {
+        height: 120vh;
+        background-size: 414px;
+    }
+
+    #hero-version-2 nav {
+        justify-content: center;
+    }
+
+    #hero-version-2 .logo {
+        justify-content: center;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        margin-left: 0;
+    }
+
+}
