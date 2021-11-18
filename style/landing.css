@@ -638,7 +638,7 @@ hr {
     height:160px;
     background-image: url(../image/pay-box.svg)
 }
-.coord-pay:hover, .coordination-card:hover a .coord-icon.coord-pay{
+.coord-pay:hover, .coordination-card:hover a .coord-icon.coord-pay:hover{
     background-image: url(../image/pay-box-hover.svg)
 }
 
@@ -647,7 +647,7 @@ hr {
     height: 160px;
     background-image: url(../image/recruit-box.svg)
 }
-.coord-recruiter:hover, .coordination-card:hover a .coord-icon.coord-recruiter{
+.coord-recruiter:hover, .coordination-card:hover a .coord-icon.coord-recruiter:hover{
     background-image: url(../image/recruit-box-hover.svg)
 }
 
@@ -657,7 +657,7 @@ hr {
     background-image: url(../image/tip-box.svg)
 }
 
-.coord-tip:hover, .coordination-card:hover a .coord-icon.coord-tip{
+.coord-tip:hover, .coordination-card:hover a .coord-icon.coord-tip:hover{
     background-image: url(../image/tip-box-hover.svg)
 }
 
@@ -665,15 +665,17 @@ hr {
     width: 179px; 
     height:160px;
     background-image: url(../image/grant-box.svg)}
-.coord-grant:hover, .coordination-card:hover a .coord-icon.coord-grant{
+.coord-grant:hover, .coordination-card:hover a .coord-icon.coord-grant:hover{
     background-image: url(../image/grant-box-hover.svg)
 }
 
 .coord-tokenstream{
     width: 205px; 
-    height:160px;
-    background-image: url(../image/token-stream-box.svg)}
-.coord-tokenstream, .coordination-card:hover a .coord-icon.coord-tokenstream{
+    height: 160px;
+    background-image: url(../image/token-stream-box.svg)
+}
+
+.coord-tokenstream:hover, .coordination-card:hover a .coord-icon.coord-tokenstream:hover{
     background-image: url(../image/token-stream-box-hover.svg)
 }
 
