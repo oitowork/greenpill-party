@@ -186,8 +186,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
     gap: 10px 100px;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
 }
 
 .speakers-container .title {
@@ -501,6 +499,21 @@ hr {
 
 /* coordenation.party */
 
+.coordenation-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-coordenation .review-card .review-title{
+    color:#FFCC00;
+    font-size: 64px;
+}
+
+.coordenation-hero .subtitle {
+    color: #6F3FF5;
+
+}
 .coord-yellow {
     color: #FFCC00;
 }
@@ -515,10 +528,68 @@ hr {
 }
 
 
+.coordenation-players {
+    align-content: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.coordenation-box-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+    gap: 20px 100px;
+}
+
+
+.coordenation-box-list li {
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
+.coordenation-card {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(111, 63, 245, 0.2);
+    padding: 30px;
+    align-items: center;
+}
+
+.coordenation-card_title {
+    color: #C9B8FF;
+}
+
+.coordenation-card:hover {
+    background-color:#0E0333;
+    color: #FFCC00; 
+}
+
+.coordenation-card_image .tip-box>path:hover {
+    fill: #FFCC00;
+}
+a .tip-box:hover, a img .tip-box>path {
+    fill: #FFCC00;
+    color: #FFCC00;
+}
+
+/* SVG Icons Hover */
+
+a img svg:hover #pay,
+a img svg:hover #grant,
+a img svg:hover #tokenstream,
+a img svg:hover #recruiter { 
+    fill: #FFCC00;
+}
+
+
 /* Responsive Style */
 @media (max-width: 1280px) {
 
-    /*SCHELLING P0INT*/
+    /*Coordenation.party*/
     .hero-container {
         flex-direction: column;
         text-align: center;
@@ -530,16 +601,16 @@ hr {
         margin: 0;
     }
 
-    .schelling-hero-description {
+    .coordenation-hero-description {
         margin: 0;
     }
 
-    .schelling-hero-description .title {
+    .coordenation-hero-description .title {
         font-size: 64px;
         color: #FFCC00;
     }
 
-    .schelling-hero-description .subtitle {
+    .coordenation-hero-description .subtitle {
         font-size: 64px;
         color: #FFCC00;
     }
