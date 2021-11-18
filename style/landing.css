@@ -24,6 +24,7 @@ body {
 @media (min-width: 1313px) {
     body {
         font-size: 140%;
+
     }
 }
 
@@ -122,7 +123,8 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 160px;
+    margin-top: 170px;
+    margin-bottom: 157px;
 }
 
 
@@ -148,9 +150,9 @@ main {
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
-    line-height: 95px;
     color: #FFCC00;
     text-align: center;
+    margin-bottom: 4px;
 }
 
 .coordination-party-hero-description .subtitle {
@@ -503,8 +505,8 @@ hr {
     align-items: center;
 }
 
-.review-coordination .review-card .review-title{
-    color:#FFCC00;
+.review-coordination .review-card .review-title {
+    color: #FFCC00;
     font-size: 64px;
 }
 
@@ -512,6 +514,7 @@ hr {
     color: #6F3FF5;
 
 }
+
 .coord-yellow {
     color: #FFCC00;
 }
@@ -527,18 +530,15 @@ hr {
 
 
 .coordination-players {
-    display: flex;
     align-content: center;
-    justify-content:center;
-    margin-top: 175px;
+    justify-content: center;
     margin-bottom: 242px;
-    margin-left: 20%;
-    margin-right:20% ;
 }
 
 .coordination-box-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 30px 100px;
     align-items: center;
 }
@@ -548,9 +548,36 @@ hr {
     justify-content: center;
     text-align: center;
     list-style: none;
+    justify-self: center;
 }
+
+
+
+.coordination-box-list li:nth-child(1) {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.coordination-box-list li:nth-child(2) {
+    grid-area: 1 / 3 / 3 / 5;
+}
+
+.coordination-box-list li:nth-child(3) {
+    grid-area: 1 / 5 / 3 / 7;
+}
+
+.coordination-box-list li:nth-child(4) {
+    grid-area: 3 / 1 / 5 / 4;
+    justify-self: end;
+
+}
+
+.coordination-box-list li:nth-child(5) {
+    grid-area: 3 / 4 / 5 / 7;
+    justify-self: start;
+
+}
+
 .coordination-card {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -566,8 +593,8 @@ hr {
 }
 
 .coordination-card:hover {
-    background-color:#0E0333;
-    color: #FFCC00; 
+    background-color: #0E0333;
+    color: #FFCC00;
 }
 
 /* SVG Navbar/Hover */
@@ -578,50 +605,62 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.icon-pay{
+
+.icon-pay {
     width: 45px;
     height: 61px;
     background-image: url(../image/pay-menu.svg)
 }
-.icon-pay:hover, .header-nav-menu .link-landing.pay:hover{
+
+.icon-pay:hover,
+.header-nav-menu .link-landing.pay:hover {
     background-image: url(../image/pay-party-hover.svg)
 }
-.icon-recruiter{
+
+.icon-recruiter {
     width: 61px;
     height: 61px;
     background-image: url(../image/recruit-menu.svg)
 }
-.icon-recruiter:hover, .header-nav-menu .link-landing.recruiter:hover{
+
+.icon-recruiter:hover,
+.header-nav-menu .link-landing.recruiter:hover {
     background-image: url(../image/recruit-party-hover.svg)
 }
 
-.icon-grant{
+.icon-grant {
     width: 68px;
     height: 61px;
     background-image: url(../image/grant-menu.svg)
 }
 
-.icon-grant:hover, .header-nav-menu .link-landing.grant:hover{
+.icon-grant:hover,
+.header-nav-menu .link-landing.grant:hover {
     background-image: url(../image/grant-party-hover.svg)
 }
 
-.icon-tokenstream{
+.icon-tokenstream {
     width: 78px;
     height: 61px;
     background-image: url(../image/token-stream-menu.svg)
 }
-.icon-tokenstream:hover, .header-nav-menu .link-landing.tokenstream:hover{
+
+.icon-tokenstream:hover,
+.header-nav-menu .link-landing.tokenstream:hover {
     background-image: url(../image/tokenstream-party-hover.svg)
 }
 
-.icon-tip{
+.icon-tip {
     width: 61px;
     height: 61px;
     background-image: url(../image/tip-menu.svg)
 }
-.icon-tip:hover, .header-nav-menu .link-landing.tip:hover{
+
+.icon-tip:hover,
+.header-nav-menu .link-landing.tip:hover {
     background-image: url(../image/tip-party-hover.svg)
 }
+
 /* END SVG Navbar/Hover */
 
 /* SVG Icons Hover */
@@ -633,17 +672,17 @@ hr {
 }
 
 
-.coord-pay{
-    width: 118px; 
-    height:160px;
+.coord-pay {
+    width: 118px;
+    height: 160px;
     background-image: url(../image/pay-box.svg)
 }
 .coord-pay:hover, .coordination-card:hover a .coord-icon.coord-pay{
     background-image: url(../image/pay-box-hover.svg)
 }
 
-.coord-recruiter{
-    width: 162px; 
+.coord-recruiter {
+    width: 162px;
     height: 160px;
     background-image: url(../image/recruit-box.svg)
 }
@@ -651,9 +690,9 @@ hr {
     background-image: url(../image/recruit-box-hover.svg)
 }
 
-.coord-tip{
-    width: 160px; 
-    height:160px;
+.coord-tip {
+    width: 160px;
+    height: 160px;
     background-image: url(../image/tip-box.svg)
 }
 
@@ -669,8 +708,8 @@ hr {
     background-image: url(../image/grant-box-hover.svg)
 }
 
-.coord-tokenstream{
-    width: 205px; 
+.coord-tokenstream {
+    width: 205px;
     height: 160px;
     background-image: url(../image/token-stream-box.svg)
 }
@@ -688,6 +727,7 @@ hr {
 .review-card {
     text-align: center;
 }
+
 .review-title {
     margin-bottom: 60px;
     font-style: normal;
@@ -699,9 +739,10 @@ hr {
 }
 
 .review-description {
-    margin: 0 431px 10px;
+    width: 738px;
     color: #C9B8FF;
     font-style: italic;
+    margin: 0 auto;
     font-size: 24px;
     text-align: center;
 }
@@ -711,11 +752,47 @@ hr {
     color: #6F3FF5;
 }
 
-.review-author{
+.review-author {
     justify-content: center;
 }
 
 /* Responsive Style */
+
+@media (max-width: 1420px) {
+    .coordination-box-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 0;
+    }
+
+    .coordination-box-list li:nth-child(1) {
+        grid-area: 1 / 1 / 3 / 3;
+    }
+
+    .coordination-box-list li:nth-child(2) {
+        grid-area: 1 / 3 / 3 / 5;
+    }
+
+    .coordination-box-list li:nth-child(3) {
+        grid-area: 3 / 1 / 5 / 3;
+    }
+
+    .coordination-box-list li:nth-child(4) {
+        grid-area: 3 / 3 / 5 / 5;
+        justify-self: center;
+
+    }
+
+    .coordination-box-list li:nth-child(5) {
+        grid-area: 5 / 2 / 7 / 4;
+        justify-self: center;
+        margin-top: 30px;
+
+    }
+
+}
+
 @media (max-width: 1280px) {
 
     /*coordination.party*/
@@ -756,7 +833,12 @@ hr {
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1095px) {
+
+    .header-nav-menu {
+        width: 80vw;
+    }
+
     section.section-container figure {
         width: 50%;
     }
@@ -778,7 +860,41 @@ hr {
     }
 }
 
-@media (max-width: 688px) {
+@media (max-width: 900px) {
+    .coordination-box-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .coordination-box-list li:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .coordination-box-list li:nth-child(2) {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .coordination-box-list li:nth-child(3) {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .coordination-box-list li:nth-child(4) {
+        grid-area: 4 / 1 / 5 / 2;
+        justify-self: center;
+
+    }
+
+    .coordination-box-list li:nth-child(5) {
+        grid-area: 5 / 1 / 6 / 2;
+        justify-self: center;
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 760px) {
     header {
         margin: 0;
         display: flex;
@@ -786,10 +902,12 @@ hr {
         justify-content: center;
     }
 
-    .schelling-hero {
-        display: flex;
-        flex-direction: column;
+    .coordination-party-hero-description .title {
+        font-size: 48px;
+    }
 
+    .coordination-party-hero-description .subtitle {
+        font-size: 32px;
     }
 
     section.sponsors-container figure {
@@ -803,7 +921,13 @@ hr {
         height: 120vh;
         background-size: 414px;
     }
+
+    .review-description {
+        width: 100%;
+    }
 }
+
+
 
 @media (max-width: 540px) {
 
@@ -813,22 +937,46 @@ hr {
         width: 100%;
     }
 
+
+
     .header-nav-menu {
-        flex-direction: column;
+        width: 100%;
         margin: 10px;
     }
 
     .header-nav-menu li {
-        margin-bottom: 10px;
+        margin: 10px;
     }
+
+    .coordination-party-hero-description .title {
+        font-size: 22px;
+    }
+
+    .coordination-party-hero-description .subtitle {
+        font-size: 18px;
+    }
+
+    .coordination-players {
+        margin-bottom: 121px;
+    }
+
+    .coordination-card {
+        width: 85vw;
+        height: 250px;
+    }
+
+    .review-coordination {
+        padding: 0 3%;
+    }
+
 
     .hero-container,
     .section-container {
-        margin-top: 50px;
+        margin: 85px 0;
     }
 
     .speakers-container .title {
-        margin-bottom: 50px;
+        margin-bottom: 4px;
     }
 
     .schelling-hero-description .title,
@@ -867,4 +1015,14 @@ hr {
         margin-left: 0;
     }
 
+    .gitcoin-brand {
+        padding-top: 0;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .header-nav-menu {
+        flex-direction: column;
+    }
 }
