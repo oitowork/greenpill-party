@@ -93,12 +93,10 @@ img {
 
 
 a.link-landing {
-    font-family: Miriam Libre;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: #fff;
     outline: none;
 }
 
@@ -572,13 +570,59 @@ hr {
     color: #FFCC00; 
 }
 
-.coordination-card_image .tip-box>path:hover {
-    fill: #FFCC00;
+/* SVG Navbar/Hover */
+.menu-icon {
+    display: inline-block;
+    width: 61px;
+    height: 61px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-a .tip-box:hover, a img .tip-box>path {
-    fill: #FFCC00;
-    color: #FFCC00;
+.icon-pay{
+    width: 45px;
+    height: 61px;
+    background-image: url(../image/pay-menu.svg)
 }
+.icon-pay:hover, .header-nav-menu .link-landing.pay:hover{
+    background-image: url(../image/pay-party-hover.svg)
+}
+.icon-recruiter{
+    width: 61px;
+    height: 61px;
+    background-image: url(../image/recruit-menu.svg)
+}
+.icon-recruiter:hover, .header-nav-menu .link-landing.recruiter:hover{
+    background-image: url(../image/recruit-party-hover.svg)
+}
+
+.icon-grant{
+    width: 68px;
+    height: 61px;
+    background-image: url(../image/grant-menu.svg)
+}
+
+.icon-grant:hover, .header-nav-menu .link-landing.grant:hover{
+    background-image: url(../image/grant-party-hover.svg)
+}
+
+.icon-tokenstream{
+    width: 78px;
+    height: 61px;
+    background-image: url(../image/token-stream-menu.svg)
+}
+.icon-tokenstream:hover, .header-nav-menu .link-landing.tokenstream:hover{
+    background-image: url(../image/tokenstream-party-hover.svg)
+}
+
+.icon-tip{
+    width: 61px;
+    height: 61px;
+    background-image: url(../image/tip-menu.svg)
+}
+.icon-tip:hover, .header-nav-menu .link-landing.tip:hover{
+    background-image: url(../image/tip-party-hover.svg)
+}
+/* END SVG Navbar/Hover */
 
 /* SVG Icons Hover */
 .coord-icon {
@@ -594,7 +638,7 @@ a .tip-box:hover, a img .tip-box>path {
     height:160px;
     background-image: url(../image/pay-box.svg)
 }
-.coord-pay:hover{
+.coord-pay:hover, .coordination-card:hover a .coord-icon.coord-pay{
     background-image: url(../image/pay-box-hover.svg)
 }
 
@@ -603,7 +647,7 @@ a .tip-box:hover, a img .tip-box>path {
     height: 160px;
     background-image: url(../image/recruit-box.svg)
 }
-.coord-recruiter:hover{
+.coord-recruiter:hover, .coordination-card:hover a .coord-icon.coord-recruiter{
     background-image: url(../image/recruit-box-hover.svg)
 }
 
@@ -612,7 +656,8 @@ a .tip-box:hover, a img .tip-box>path {
     height:160px;
     background-image: url(../image/tip-box.svg)
 }
-.coord-tip:hover{
+
+.coord-tip:hover, .coordination-card:hover a .coord-icon.coord-tip{
     background-image: url(../image/tip-box-hover.svg)
 }
 
@@ -620,7 +665,7 @@ a .tip-box:hover, a img .tip-box>path {
     width: 179px; 
     height:160px;
     background-image: url(../image/grant-box.svg)}
-.coord-grant:hover{
+.coord-grant:hover, .coordination-card:hover a .coord-icon.coord-grant{
     background-image: url(../image/grant-box-hover.svg)
 }
 
@@ -628,8 +673,9 @@ a .tip-box:hover, a img .tip-box>path {
     width: 205px; 
     height:160px;
     background-image: url(../image/token-stream-box.svg)}
-.coord-tokenstream:hover{
-    background-image: url(../image/token-stream-box-hover.svg)}
+.coord-tokenstream, .coordination-card:hover a .coord-icon.coord-tokenstream{
+    background-image: url(../image/token-stream-box-hover.svg)
+}
 
 .review-coordination {
     display: flex;
