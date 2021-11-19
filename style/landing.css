@@ -669,6 +669,7 @@ hr {
     width: 118px;
     height: 160px;
     background-size: cover;
+    transition: background-image .3s ease-in;
 }
 
 
