@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://coordenation.party">
-    <img src="image/greenpill-socialimage.svg" alt="Gitcoin greenpill.party"  >
+    <img src="image/greenpill-socialimage.svg" alt="Gitcoin greenpill.party" width="200" height="200" >
   </a>
 
   <h3 align="center">Gitcoin Greenpill.party</h3>
@@ -31,5 +31,5 @@ python -m SimpleHTTPServer 3000
 ```
 
 ---
-[twitter](https://twitter.com/codingsh)
-[twitter](https://twitter.com/oitowork)
+- [codingsh](https://twitter.com/codingsh)
+- [oitowork](https://twitter.com/oitowork)

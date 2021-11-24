@@ -124,7 +124,7 @@ main {
     display: flex;
     align-items: center;
     margin-top: 170px;
-    margin-bottom: 157px;
+    margin-bottom: 188px;
 }
 
 
@@ -142,6 +142,7 @@ main {
 }
 
 .coordination-party-hero-description {
+    width: 472px;
     margin: 0 auto;
 }
 
@@ -150,9 +151,10 @@ main {
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
-    color: #FFCC00;
-    text-align: center;
+    color: #0E0333;
+    text-align: left;
     margin-bottom: 4px;
+    line-height: 130%;
 }
 
 .coordination-party-hero-description .subtitle {
@@ -303,7 +305,6 @@ footer {
     flex-direction: column;
     justify-items: center;
     justify-content: center;
-    background-color: #0E0333;
 }
 
 .section-title {
@@ -503,6 +504,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../image/background-top-bubble.svg);
 }
 
 .review-coordination .review-card .review-title {
@@ -919,6 +921,12 @@ hr {
 
     }
 
+}
+
+
+/* GreenPill */
+.background-greenpill {
+    background-image: url(../image/background-greenpill.svg);
 }
 
 @media (max-width: 1280px) {
