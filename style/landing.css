@@ -18,7 +18,7 @@ body {
     max-width: 1600px;
     margin: auto;
     background-color: #ffff;
-    color:#0E0333;
+    color: #0E0333;
 }
 
 @media (min-width: 1313px) {
@@ -678,7 +678,9 @@ hr {
     height: 160px;
     background-image: url(../image/pay-box.svg)
 }
-.coord-pay:hover, .coordination-card:hover a .coord-icon.coord-pay{
+
+.coord-pay:hover,
+.coordination-card:hover a .coord-icon.coord-pay {
     background-image: url(../image/pay-box-hover.svg)
 }
 
@@ -687,7 +689,9 @@ hr {
     height: 160px;
     background-image: url(../image/recruit-box.svg)
 }
-.coord-recruiter:hover, .coordination-card:hover a .coord-icon.coord-recruiter{
+
+.coord-recruiter:hover,
+.coordination-card:hover a .coord-icon.coord-recruiter {
     background-image: url(../image/recruit-box-hover.svg)
 }
 
@@ -697,15 +701,19 @@ hr {
     background-image: url(../image/tip-box.svg)
 }
 
-.coord-tip:hover, .coordination-card:hover a .coord-icon.coord-tip{
+.coord-tip:hover,
+.coordination-card:hover a .coord-icon.coord-tip {
     background-image: url(../image/tip-box-hover.svg)
 }
 
-.coord-grant{
-    width: 179px; 
-    height:160px;
-    background-image: url(../image/grant-box.svg)}
-.coord-grant:hover, .coordination-card:hover a .coord-icon.coord-grant{
+.coord-grant {
+    width: 179px;
+    height: 160px;
+    background-image: url(../image/grant-box.svg)
+}
+
+.coord-grant:hover,
+.coordination-card:hover a .coord-icon.coord-grant {
     background-image: url(../image/grant-box-hover.svg)
 }
 
@@ -715,9 +723,128 @@ hr {
     background-image: url(../image/token-stream-box.svg)
 }
 
-.coord-tokenstream:hover, .coordination-card:hover a .coord-icon.coord-tokenstream{
+.coord-tokenstream:hover,
+.coordination-card:hover a .coord-icon.coord-tokenstream {
     background-image: url(../image/token-stream-box-hover.svg)
 }
+
+/* Form Styles */
+.form {
+    display: flex;
+    max-width: 478px;
+    margin: 0 auto;
+    flex-direction: column;
+    place-items: center;
+    font-family: Space Mono, sans-serif;
+}
+
+.form label {
+    width: 552px;
+    height: 44px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: #0E0333;
+}
+
+.form label:nth-child(n+2) {
+    margin-top: 52px;
+}
+
+.form input {
+    width: 100%;
+    height: 80px;
+    background: #E6FFF9;
+    border: 1px solid #02E2AC;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.form input::placeholder {
+    margin-top: 100px;
+    color: #02E2AC;
+    font-family: Space Mono, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.buttons-green-pill {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.buttons-green-pill a {
+    width: 147px;
+    height: 30px;
+    font-family: Space Mono, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+    text-decoration: underline;
+    color: #6F3FF5;
+}
+
+/* first button*/
+.buttons-green-pill button:first-child {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.buttons-green-pill button:first-child img {
+    width: 13px;
+    height: 13px;
+    margin-right: 13px;
+}
+
+/* second button */
+
+.buttons-green-pill button:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 184px;
+    height: 60px;
+    background: #02E2AC;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttons-green-pill button:last-child img {
+    width: 30px;
+    height: 30px;
+    margin-right: 22px;
+    margin-left: 26px;
+}
+
+.buttons-green-pill button:last-child p {
+    width: 67px;
+    height: 24px;
+    font-family: Libre Franklin, Arial, Space Mono, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #E6FFF9;
+    margin-right: 38px;
+}
+
+/* End */
 
 .review-coordination {
     display: flex;
@@ -926,11 +1053,19 @@ hr {
     .review-description {
         width: 100%;
     }
+
+    .form label {
+        width: 500px;
+    }
+
+
+
+
 }
 
 
 
-@media (max-width: 540px) {
+@media (max-width: 550px) {
 
     .schelling-hero-description .title,
     .hero-image,
@@ -1020,10 +1155,33 @@ hr {
         padding-top: 0;
     }
 
+
+    .form label {
+        width: 100%;
+    }
+
 }
 
-@media (max-width: 440px) {
+@media (max-width: 380px) {
     .header-nav-menu {
         flex-direction: column;
+    }
+
+    .form {
+        padding: 0 4%;
+    }
+
+    .form label,
+    .form input,
+    .form input::placeholder {
+        font-size: 18px;
+    }
+
+
+
+    .buttons-green-pill {
+        flex-direction: column;
+        place-items: center;
+        gap: 4px;
     }
 }
