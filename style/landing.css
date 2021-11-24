@@ -123,8 +123,9 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 170px;
+    margin-top: 188px;
     margin-bottom: 188px;
+    z-index: 999;
 }
 
 
@@ -408,11 +409,11 @@ footer {
 
 .gitcoin-brand {
     display: flex;
-
     padding-top: 154px;
     padding-bottom: 154px;
     justify-content: center;
     align-items: center;
+    background: transparent;
 }
 
 .gitcoin-brand img {
@@ -504,7 +505,6 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../image/background-top-bubble.svg);
 }
 
 .review-coordination .review-card .review-title {
@@ -801,6 +801,47 @@ hr {
 .background-greenpill {
     background-image: url(../image/background-greenpill.svg);
 }
+
+
+
+
+/* GreenPill SVG Bubble Background */
+.bubbles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .bubbleGreen {
+      animation: moveBubble 12s ease-in infinite alternate;
+  }
+
+  .bubbleYellow {
+      animation: moveBubble 12s ease-out infinite alternate;
+  }
+  @keyframes moveBubble {
+      from {
+          transform: translateX(-554px);
+      }
+  }
+
+  .greenPill {
+    animation: movePill 14s ease-in-out infinite alternate;
+  }
+
+  @keyframes movePill {
+    from {
+        transform: translateY(573px);
+    }
+}
+.greenpill-pattern {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+
 
 @media (max-width: 1280px) {
 
