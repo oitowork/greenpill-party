@@ -303,7 +303,6 @@ footer {
     flex-direction: column;
     justify-items: center;
     justify-content: center;
-    background-color: #0E0333;
 }
 
 .section-title {
@@ -503,6 +502,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../image/background-top-bubble.svg);
 }
 
 .review-coordination .review-card .review-title {
@@ -792,6 +792,12 @@ hr {
 
     }
 
+}
+
+
+/* GreenPill */
+.background-greenpill {
+    background-image: url(../image/background-greenpill.svg);
 }
 
 @media (max-width: 1280px) {
