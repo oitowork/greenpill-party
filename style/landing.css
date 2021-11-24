@@ -17,8 +17,8 @@ body {
     font-family: 'Abel', sans-serif;
     max-width: 1600px;
     margin: auto;
-    background-color: #0E0333;
-    color: #fff;
+    background-color: #ffff;
+    color:#0E0333;
 }
 
 @media (min-width: 1313px) {

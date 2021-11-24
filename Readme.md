@@ -1,28 +1,23 @@
 <br />
 <div align="center">
   <a href="https://coordenation.party">
-    <img src="image/coordination.party-logo.png" alt="Gitcoin coordination.party"  height="80">
+    <img src="image/greenpill-socialimage.svg" alt="Gitcoin greenpill.party"  >
   </a>
 
-  <h3 align="center">Gitcoin Coordination.party</h3>
+  <h3 align="center">Gitcoin Greenpill.party</h3>
 
   <p align="center">
     production: 
     <br />
-    <a href="https://coordenation.party"><strong>Production Page</strong></a>
+    <a href="https://greenpill.party"><strong>Production Page</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </div>
 
 current version: ```0.0.1```
 
-- [Figma Version 1](https://www.figma.com/file/UWpsNJO4N2mCsC7paorUao/coordination.party?node-id=35%3A33)
+- [Figma Version 1](https://www.figma.com/file/7XRRHI8YWorR8en4ih6VB5/greenpill?node-id=8%3A565)
 
 ### Stack 
 
@@ -30,10 +25,11 @@ current version: ```0.0.1```
 - css
 
 ## How  to Run 
+
 ```
 python -m SimpleHTTPServer 3000
 ```
 
 ---
 [twitter](https://twitter.com/codingsh)
-  
+[twitter](https://twitter.com/oitowork)
