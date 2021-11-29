@@ -86,7 +86,10 @@
                 <a href="javascript:alert('This is a simple tool created by the Gitcoin community to facilitate pledges to support a more Solarpunk world.');">What’s this?</a>
               </button>
 
-              <button id="target" type="button">
+              <button id="target" type="button"
+ data-kinetics-attraction="" data-kinetics-attraction-chance=".99" data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="1.7" 
+
+              >
                 <img src="image/tweet-icon.svg" alt="tweet" />
                 <p>Tweet</p>
               </button>
@@ -120,3 +123,68 @@ document.getElementById('target').onclick = function(e){
 
 
 </script>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+
+const params = {
+  "debug": false,
+  "spring": {
+    "tension": 8,
+    "friction": 10,
+    "randomTension": 50,
+    "randomFriction": -18,
+    "extendedRestDelay": 50
+  },
+  "canvas": {
+    "handlePosition": true
+  },
+  "particles": {
+    "count": 24,
+    "sides": {"min": 3, "max": 5},
+    "sizes": {"min": 1, "max": 1},
+    "rotate": {"speed": 1, "direction": null},
+    "mode": {
+      "type": "wind-from-left",
+      "speed": 0,
+      "boundery": "endless"
+    },
+    "parallex": {
+      "layers": 3,
+      "speed": 0.15
+    },
+    "attract": {
+      "chance": 0.5,
+      "force": 1,
+      "grow": 2,
+      "size": null,
+      "type": "static",
+      "speed": 1.5,
+      "direction": -1,
+      "radius": 1
+    },
+    "fill": { 
+      "colors": ["#f7ce46", "#67dfaf"], 
+      "toColors": ["#f7ce46", "#67dfaf"],
+      "opacity": 1
+    },
+    "stroke": { 
+      "colors": [], 
+      "toColors": [],
+      "width":[],
+      "opacity": 1
+    },
+    
+  }
+};
+
+  const kinetics = new Kinetics(params).interactionHook();
+
+});
+
+
+</script>
+
+<script src="https://unpkg.com/@drum-n-bass/kinetics"></script>
+
