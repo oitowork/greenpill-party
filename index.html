@@ -58,12 +58,14 @@
         <div>
           <h1>Make a Pledge:</h1 >
           <form class="form">
-            <label for="percentage">I've been GreenPilled! I Pledge</label>
+            <label for="percentage">I've been GreenPilled! </label>
+            <label for="percentage">I Pledge</label>
             <input
               type="text"
               id="percentage"
               name="percentage"
               placeholder="25%"
+              value="25%"
             /> 
             <label for="percentage">of my Wealth Above </label>
             <input
@@ -71,6 +73,7 @@
               id="amount"
               name="amount"
               placeholder="$10mm"
+              value="$10mm"
             />
             <label for="cause">to the cause of</label>
             <input
@@ -78,6 +81,7 @@
               id="cause"
               name="cause"
               placeholder="Public Goods Funding"
+              value="Public Goods Funding"
             />
 
             <div class="buttons-green-pill">
@@ -116,7 +120,7 @@ document.getElementById('target').onclick = function(e){
   var X = document.getElementById('percentage').value;
   var cause = document.getElementById('cause').value;
   var Y = document.getElementById('amount').value;
-  var text = 'I pledge '+X+'% of my wealth above '+Y+'% to the cause of ' + cause;
+  var text = 'I pledge '+X+' of my wealth above '+Y+' to the cause of ' + cause;
   var url = 'https://greenpill.party/'
   document.location.href="https://twitter.com/intent/tweet?text=" +encodeURI(text)+ "&url=" + encodeURI(url);
 }
