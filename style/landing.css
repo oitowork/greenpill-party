@@ -319,3 +319,67 @@ h1{
         gap: 4px;
     }
 }
+
+/* start call action */
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px;
+}
+.call-to-action.revert {
+    flex-direction: reverse;
+}
+
+.wrapper {
+    width: 600px;
+    height: 600px;
+}
+
+.wrapper.nft {
+    width: 256px;
+    height: 256px;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.call-to-action button {
+    width: 250px;
+    height: 48px;
+    color: #E6FFF9;
+    font-weight: bold;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 184px;
+    height: 60px;
+    background: #02E2AC;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s;
+    margin: 13px;
+}
+
+.call-to-action button:hover {
+    filter: brightness(.96);
+    transform: translateY(-2px)
+}
+.call-action-wrapper-buttons {
+    display: flex;
+    padding: 2em;
+}
+.call-action-info h2{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* end call action */
