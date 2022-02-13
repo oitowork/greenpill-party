@@ -16,6 +16,7 @@ html {
 
 body {
     font-family: Space Mono;
+    max-width: 1920px;
     margin: auto;
     background-color: #ffff;
     color: #0E0333;
@@ -298,6 +299,8 @@ h1{
 
     .gitcoin-brand {
         padding-top: 16px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
     .form label {
@@ -330,6 +333,7 @@ h1{
     justify-content: center;
     gap: 40px;
     padding: 40px;
+    flex-direction: column;
 }
 .call-to-action.title {
     font-size: 0.625rem;
@@ -492,3 +496,118 @@ h1{
     justify-content: left;
     margin-left: 170px;
 }
+
+.nav-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) { 
+    .logo {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+    
+    .logo img {
+        width: 75px;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+    .navbar, .nav-links {
+        flex-direction: column;
+    }
+    .navbar__ToggleShow {
+        display: flex;
+    }
+
+    .nav-links {
+        display:none;
+    }
+
+    .nav-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        margin-top: 30px;
+        font-size: 40px;
+        margin-right: 26px;
+    }
+
+    .hero-container {
+        margin-bottom: 0;
+    }
+
+    .call-to-action {
+        gap: 0;
+        padding: 0;
+    }
+
+    #book-section .wrapper {
+        margin: 0;
+    }
+
+    #book-section .call-to-action {
+        flex-direction: column-reverse;
+    }
+
+
+    #book-section .title, #nft-section .title {
+        line-height: 70px;
+    }
+
+    
+
+    section#nft-section{
+        justify-content: center;
+        margin-top: 48px;
+        margin-bottom: 200px;
+        margin-left: 50px;
+    }
+
+
+    .call-to-action.background {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper img {
+        height: 50%;
+    }
+
+    body {
+        font-size: 100%;
+    }
+
+    .call-action-box {
+        width: 350px;
+        margin: 70px;
+    }
+
+    .wrapper {
+        width: 50%;
+        height: 50%;
+    }
+
+    .call-to-action.background .call-action-box { 
+        width: auto;
+        margin: 40px;
+    }
+
+    .call-action-info .title {
+        line-height: 61px;
+    }
+
+    #nft-section  .call-action-box {
+        margin: auto;
+        width: auto;
+    }
+
+}
+
+
+  
+  

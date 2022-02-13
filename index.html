@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@gitcoin">
@@ -25,6 +26,7 @@
     href="https://s.gitcoin.co/static/v2/images/favicon.ico/apple-touch-icon.486115005c66.png" />
   <link rel="stylesheet" href="style/landing.css" />
   <link rel="icon" href="image/greenpill-socialimage.svg" type="image/gif" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- https://ogp.me/ -->
   <meta property="og:title" content="greenpill.party" />
   <meta property="og:type" content="blockchain" />
@@ -37,6 +39,9 @@
     <a href="/" class="logo">
       <img src="/image/logo-greenpill.svg" alt="greePill logo">
     </a>
+    <div class="nav-item nav-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
     <ul class="nav-links" id="nav-green-pill">
     </ul>
   </nav>
@@ -326,4 +331,13 @@
         navRender += '<br />'
     })
     document.getElementById('nav-green-pill').innerHTML = navRender;
+</script>
+<script>
+  function classToggle() {
+    const navs = document.querySelectorAll('.nav-item')
+    navs.forEach(nav => nav.classList.toggle('navbar__ToggleShow'));
+  }
+
+document.querySelector('.nav-toggle')
+  .addEventListener('click', classToggle);
 </script>
