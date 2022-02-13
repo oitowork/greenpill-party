@@ -15,7 +15,7 @@
   <meta name="twitter:image" content="/image/twitter.png">
 
 
-  <title>GreenPill.Party</title>
+  <title>GreenPill.Party</title>  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
@@ -33,6 +33,13 @@
 </head>
 
 <body>
+  <nav class="navbar">
+    <a href="/" class="logo">
+      <img src="/image/logo-greenpill.svg" alt="greePill logo">
+    </a>
+    <ul class="nav-links" id="nav-green-pill">
+    </ul>
+  </nav>
   <main>
     <section class="coordination-hero background-bubble">
       <div class="hero-container">
@@ -44,76 +51,71 @@
         </div>
       </div>
     </section>
-     <!-- call action podcast -->
-     <section class='call-to-action'>
-      <div class='wrapper'>
-        <img src="image/greenpillpodcast.jpeg" alt="Green Pilled book" />
-      </div>
-      <div class="call-action-box">
-        <div class="call-action-info">
-          <h2>subscribe to the greenpill podcast</h2>
-        </div>
-        <div class="call-action-wrapper-buttons">
-          <button id="podcast" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
-            data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
-            data-kinetics-attraction-radius="1.7">
-            <p>subscribe</p>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- end call action podcast -->
+    
 
     <!-- call action book -->
-    <section class='call-to-action'>
+    <section id="book-section" class='call-to-action'>
       <div class='wrapper'>
-        <img src="image/greenpilledbook.png" alt="Green Pilled book" />
+        <img src="image/greenpill-book.png" alt="Green Pilled book" />
       </div>
       <div class="call-action-box">
         <div class="call-action-info">
-          <h2>purchase the greenpill book</h2>
-          <p> store.gitcoin.co for physical copy, direct link to PDF for the digital copy)</p>
+          <h1 class="title">Purchase the Green Pill book</h1>
         </div>
         <div class="call-action-wrapper-buttons">
           <button id="book" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
             data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
             data-kinetics-attraction-radius="1.7">
-            <p>purchase</p>
+            <p>Hardcover</p>
           </button>
           <button id="digital-version" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
             data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
             data-kinetics-attraction-radius="1.7">
-            <p>PDF</p>
+            <p>Ebook</p>
           </button>
         </div>
       </div>
     </section>
     <!-- end call action book  -->
-
-
-    <!-- call action NFT -->
-    <section class='call-to-action'>
-      <div class='wrapper nft'>
-        <img src="image/solarpunk.png" alt="GreenPill NFT" />
-      </div>
-      <div class="call-action-box">
-        <div class="call-action-info">
-          <h2>purchase the greenpill NFT</h2>
-        </div>
-        <div class="call-action-wrapper-buttons">
-          <button id="target" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
-            data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
-            data-kinetics-attraction-radius="1.7">
-            <p>mint</p>
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- end call action book  -->
-
+    
   </main>
+  <!-- call action podcast -->
+  <section class='call-to-action background background-triangle'>
+    <div class='wrapper'>
+      <img src="image/podcast-thumbnail.png" alt="Green Pilled book" />
+    </div>
+    <div class="call-action-box">
+      <div class="call-action-info">
+        <h1 class="title">Subscribe to the greenpill podcast</h1>
+      </div>
+      <div class="call-action-wrapper-buttons">
+        <button id="podcast" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+          data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
+          data-kinetics-attraction-radius="1.7">
+          <p>listen</p>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- end call action podcast -->
+  <!-- call action NFT -->
+  <section id="nft-section" class="call-to-action">
+    <div class="call-action-box">
+      <div class="call-action-info">
+        <h1 class="title">Purchase the Green Pill NFT</h1>
+      </div>
+      <div class="call-action-wrapper-buttons">
+        <button id="target" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+          data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
+          data-kinetics-attraction-radius="1.7"  bubbleToGo=>
+          <p>link</p>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- end call action book  -->
   <footer class="footer-container background-greenpill">
-    <section class="green-pill-form-section">
+    <section id="pledge-section" class="green-pill-form-section">
       <div>
         <h1>Make a Pledge:</h1>
         <form class="form">
@@ -163,6 +165,14 @@
     document.location.href = "https://twitter.com/intent/tweet?text=" + encodeURI(text) + "&url=" + encodeURI(url);
   }
 
+  const clickToGo = (id, url) => {
+    document.getElementById(id).onclick = function (e) {
+      var X = document.getElementById('percentage').value;
+      var cause = document.getElementById('cause').value;
+      var Y = document.getElementById('amount').value;
+      document.location.href = url
+    }
+  }
   
   document.getElementById('podcast').onclick = function (e) {
     var X = document.getElementById('percentage').value;
@@ -268,4 +278,52 @@
   gtag('js', new Date());
 
   gtag('config', 'G-DPDC59RT5Y');
+</script>
+
+<!-- menu builder -->
+<script>
+   const navLinks = [
+      {
+        "greenpill": [
+            {
+            title: "Book",
+            link: "#book-section",
+            },
+            {
+            title: "Podcast",
+            link: "#podcast-section",
+            },
+            {
+            title: "NFT",
+            link: "#nft-section",
+            },
+            {
+            title: "pledge",
+            link: "#pledge-section",
+            }
+          ]
+        }];
+
+  let navRender = '';
+
+  navLinks.forEach(function (element) {
+        let nav = element.greenpill
+
+        nav.forEach(function (route) {
+          navRender += ` 
+              <li class="nav-item">
+                <a class="link-landing" href="${route.link}" 
+                data-kinetics-attraction="" 
+                data-kinetics-attraction-chance=".99"
+                data-kinetics-attraction-grow="20" 
+                data-kinetics-attraction-type="drone"
+                data-kinetics-attraction-radius="1.7"
+                >${route.title}</a>
+              </li>
+              `
+
+        })
+        navRender += '<br />'
+    })
+    document.getElementById('nav-green-pill').innerHTML = navRender;
 </script>
