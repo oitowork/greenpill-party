@@ -294,7 +294,7 @@ h1{
     }
 
     .form {
-        padding: 0 2%;
+        padding: 0 1%;
     }
 
     .gitcoin-brand {
@@ -329,12 +329,10 @@ h1{
 /* start call action */
 .call-to-action {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 40px;
-    flex-direction: column;
+    padding: 20px;
 }
+
+
 .call-to-action.title {
     font-size: 0.625rem;
     color: #0E0333;
@@ -348,8 +346,9 @@ h1{
 }
 
 .wrapper {
-    width: 409px;
-    height: 490px;
+    width: 25.5625rem;
+    height: 30.625rem;
+    margin-right: 19.6875rem;
 }
 
 .wrapper.nft {
@@ -399,9 +398,6 @@ h1{
 
 /* end call action */
 
-
- 
-
   nav {
     width: 100%;
     padding-left: 30px;
@@ -449,8 +445,8 @@ h1{
 
   .call-to-action.background .call-action-box {
     width: 465px;
-    margin-top: 135px;
-    margin-right: 347px;
+    margin-right: 18.5625rem;
+    margin-top: 5rem;
   }
 
   .call-action-info .title {
@@ -466,6 +462,10 @@ h1{
     display: flex;
   }
 
+  #book-section, #nft-section, #podcast-section {
+    margin-bottom: 14.375rem;
+  }
+
   #book-section .wrapper  {
     margin-right: 10em;
   }
@@ -477,11 +477,7 @@ h1{
     line-height: 91px;
     letter-spacing: 0em;
     text-align: left;
-  }
-
-
-  #nft-section {
-    margin-bottom:  9.375rem;
+    width: 643px;
   }
 
   #nft-section .call-action-box {
@@ -499,6 +495,19 @@ h1{
 
 .nav-toggle {
     display: none;
+}
+
+#book-section .call-to-action {
+    flex-direction: row;
+}
+
+
+button a {
+    color: #fff;
+}
+
+#podcast a {
+    color: #000000;
 }
 
 @media only screen and (max-width: 768px) { 
@@ -547,16 +556,21 @@ h1{
     }
 
     #book-section .wrapper {
-        margin: 0;
+        margin: auto;
     }
 
     #book-section .call-to-action {
         flex-direction: column-reverse;
     }
 
+    .call-action-info {
+        margin-top: 20px;
 
+    }
+    
     #book-section .title, #nft-section .title {
-        line-height: 70px;
+        width: auto;
+        line-height: 71px;
     }
 
     
@@ -584,7 +598,7 @@ h1{
 
     .call-action-box {
         width: 350px;
-        margin: 70px;
+        margin-left: 70px;
     }
 
     .wrapper {
@@ -604,6 +618,25 @@ h1{
     #nft-section  .call-action-box {
         margin: auto;
         width: auto;
+    }
+
+
+    .call-to-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #podcast-section .wrapper {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+
+    #book-section, #nft-section, #podcast-section {
+        margin-bottom: 7.18rem;
     }
 
 }
