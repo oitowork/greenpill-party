@@ -312,10 +312,11 @@
 
   document.getElementById('target').onclick = function(e){
     var X = document.getElementById('percentage').value;
-    var cause = "Public Goods Funding";
-    var text = 'I pledge '+X+' to the cause of ' + cause;
-    var url = 'https://greenpill.party/'
-    document.location.href="https://twitter.com/intent/tweet?text=" +encodeURI(text)+ "&url=" + encodeURI(url);
+    var text = `💚 I took the #GreenPill and pledged ${X} of my net worth to the cause of funding public goods! If you join me we can build a #SolarPunk future together.
+
+    👉 Make the pledge here:`
+    var url = 'https://GreenPill.Party/'
+    document.location.href="https://twitter.com/intent/tweet?text=" +encodeURIComponent(text)+ "&url=" + encodeURI(url);
   }
   
 
