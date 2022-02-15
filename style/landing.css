@@ -412,6 +412,9 @@ h1{
     list-style: none;
     display: flex;
   }
+  .nav-item {
+      display: flex;
+  }
   
   .nav-item a {
     display: inline-block;
@@ -525,15 +528,15 @@ button a {
         margin-bottom: 20px;
     }
 
-    .navbar, .nav-links {
+    .navbar, .nav-item {
         flex-direction: column;
     }
     .navbar__ToggleShow {
         display: flex;
     }
 
-    .nav-links {
-        display:none;
+    .nav-item {
+        display: none;
     }
 
     .nav-toggle {
@@ -567,7 +570,7 @@ button a {
         margin-top: 20px;
 
     }
-    
+
     #book-section .title, #nft-section .title {
         width: auto;
         line-height: 71px;
@@ -637,6 +640,14 @@ button a {
 
     #book-section, #nft-section, #podcast-section {
         margin-bottom: 7.18rem;
+    }
+
+    .nav-item.navbar__ToggleShow {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
     }
 
 }
