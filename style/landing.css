@@ -60,7 +60,6 @@ img {
 }
 
 main {
-    max-width: 1400px;
     margin: auto;
 }
 
@@ -249,6 +248,42 @@ h1{
 .background-triangle {
     background-image: url(../image/effects-podcast.svg);
 }
+
+
+.podcast-image {
+    width: 628px;
+    height: 628px;
+    background-image: url(../image/podcast-thumbnail.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .podcast-image:hover {
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    background-image: url(../image/podcast.svg);
+    
+  }
+
+
+  .book-image {
+    max-width: 100%;
+    width: 535.51px;
+    height: 586.94px;
+    background-size: 100%;
+    background: url("/image/image-book.png");
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+  
+
+  .book-image:hover {
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    background: url("/image/book.svg") no-repeat;
+  }
 
 /* Responsive Style */
 @media (max-width: 1280px) {
@@ -469,8 +504,8 @@ h1{
     margin-bottom: 14.375rem;
   }
 
-  #book-section .wrapper  {
-    margin-right: 10em;
+  #book-section .wrapper-book  {
+    margin-left: 10em;
   }
 
   #book-section .title, #nft-section .title {
@@ -481,6 +516,10 @@ h1{
     letter-spacing: 0em;
     text-align: left;
     width: 643px;
+  }
+
+  #book-section .call-action-box {
+    margin-left: 8.5625rem;
   }
 
   #nft-section .call-action-box {
@@ -650,8 +689,21 @@ button a {
         flex-direction: column;
     }
 
+    .book-image {
+        max-width: 50%;
+    }
+
+    .podcast-image {
+        max-width: 60%;
+    }
+
+    #book-section .wrapper-book {
+        margin-left: 17rem;
+    }
+    #book-section .call-action-box {
+        margin-left: 5.5625rem;
+    }
 }
 
 
-  
   

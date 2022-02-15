@@ -58,47 +58,43 @@
         </div>
       </div>
     </section>
-
-
-    <!-- call action book -->
-    <section id="book-section" class='call-to-action'>
-      <div class='wrapper'>
-        <img src="image/greenpill-book.png" alt="Green Pilled book" />
-      </div>
-      <div class="call-action-box">
-        <div class="call-action-info">
-          <h1 class="title">Purchase the book</h1>
-        </div>
-        <div class="call-action-wrapper-buttons">
-          <button id="hardcover" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
-            data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
-            data-kinetics-attraction-radius="1.7">
-            <a target="_blank"
-              href="https://www.blurb.com/bookstore/invited/9477673/0e3bf497ee09bcbc86c73f367b12bb6fa5fa0ebd">
-              <p>Hardcover</p>
-            </a>
-          </button>
-          <button id="epub" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
-            data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
-            data-kinetics-attraction-radius="1.7">
-            <a target="_blank"
-              href="https://store.gitcoin.co/products/green-pill-book-digital-edition">
-              <p>Ebook</p>
-            </a>
-          </button>
-        </div>
-          <br>
-          <a style="color:black" href="preview.pdf">[or - download a preview]</a>
-      </div>
-    </section>
-    <!-- end call action book  -->
-
   </main>
+  <!-- call action book -->
+  <section id="book-section" class='call-to-action'>
+    <div class='wrapper-book'>
+      <div class='book-image'></div>
+    </div>
+    <div class="call-action-box">
+      <div class="call-action-info">
+        <h1 class="title">Purchase the book</h1>
+      </div>
+      <div class="call-action-wrapper-buttons">
+        <button id="hardcover" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+          data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
+          data-kinetics-attraction-radius="1.7">
+          <a target="_blank"
+            href="https://www.blurb.com/bookstore/invited/9477673/0e3bf497ee09bcbc86c73f367b12bb6fa5fa0ebd">
+            <p>Hardcover</p>
+          </a>
+        </button>
+        <button id="epub" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+          data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
+          data-kinetics-attraction-radius="1.7">
+          <a target="_blank"
+            href="https://store.gitcoin.co/products/green-pill-book-digital-edition">
+            <p>Ebook</p>
+          </a>
+        </button>
+      </div>
+        <br>
+        <a style="color:black" href="preview.pdf">[or - download a preview]</a>
+    </div>
+  </section>
+  <!-- end call action book  -->
   <!-- call action podcast -->
   <section id="podcast-section" class='call-to-action background background-triangle'>
-
     <div class='wrapper'>
-      <img src="image/podcast-thumbnail.png" alt="Green Pilled book" />
+      <div class='podcast-image'></div>
     </div>
     <div class="call-action-box">
       <div class="call-action-info">
@@ -315,11 +311,11 @@
     var cause = document.getElementById('cause').value;
     var text = `💚 I took the #GreenPill and pledged ${X} of my net worth to the cause of ${cause}!
 
-🤖❤️ If you join me we can build a #SolarPunk future together.
+      🤖❤️ If you join me we can build a #SolarPunk future together.
 
-👉 Make the pledge here:`
+      👉 Make the pledge here:`
     var url = 'https://GreenPill.Party/'
-    document.location.href="https://twitter.com/intent/tweet?text=" +encodeURIComponent(text)+ "&url=" + encodeURI(url);
+    window.open("https://twitter.com/intent/tweet?text=" +encodeURIComponent(text)+ "&url=" + encodeURI(url),"_blank");
   }
   
 
