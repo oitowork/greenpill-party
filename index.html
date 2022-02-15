@@ -141,7 +141,7 @@
           <input type="text" id="percentage" name="percentage" placeholder="1%" value="1%" />
           <!-- <input type="text" id="amount" name="amount" placeholder="$10mm" value="$10mm" /> -->
           <label for="cause">of my net worth to the cause of</label>
-          <input type="text" id="cause" name="cause" placeholder="Public Goods Funding" value="Public Goods Funding" disabled />
+          <input type="text" id="cause" name="cause" placeholder="Public Goods Funding" value="funding public goods" />
 
           <div class="buttons-green-pill">
             <button type="button">
@@ -312,9 +312,12 @@
 
   document.getElementById('target').onclick = function(e){
     var X = document.getElementById('percentage').value;
-    var text = `💚 I took the #GreenPill and pledged ${X} of my net worth to the cause of funding public goods! If you join me we can build a #SolarPunk future together.
+    var cause = document.getElementById('cause').value;
+    var text = `💚 I took the #GreenPill and pledged ${X} of my net worth to the cause of ${cause}!
 
-    👉 Make the pledge here:`
+🤖❤️ If you join me we can build a #SolarPunk future together.
+
+👉 Make the pledge here:`
     var url = 'https://GreenPill.Party/'
     document.location.href="https://twitter.com/intent/tweet?text=" +encodeURIComponent(text)+ "&url=" + encodeURI(url);
   }
