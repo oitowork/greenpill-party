@@ -135,11 +135,10 @@
         <form class="form">
           <label for="percentage">I've been GreenPilled! </label>
           <label for="percentage">I Pledge</label>
-          <input type="text" id="percentage" name="percentage" placeholder="25%" value="25%" />
-          <!-- <label for="percentage">of my Wealth Above </label>
-          <input type="text" id="amount" name="amount" placeholder="$10mm" value="$10mm" /> -->
-          <label for="cause">to the cause of</label>
-          <input type="text" id="cause" name="cause" placeholder="Public Goods Funding" value="Public Goods Funding" />
+          <input type="text" id="percentage" name="percentage" placeholder="1%" value="1%" />
+          <!-- <input type="text" id="amount" name="amount" placeholder="$10mm" value="$10mm" /> -->
+          <label for="cause">of my net worth to the cause of</label>
+          <input type="text" id="cause" name="cause" placeholder="Public Goods Funding" value="Public Goods Funding" disabled />
 
           <div class="buttons-green-pill">
             <button type="button">
@@ -310,7 +309,7 @@
 
   document.getElementById('target').onclick = function(e){
     var X = document.getElementById('percentage').value;
-    var cause = document.getElementById('cause').value;
+    var cause = "Public Goods Funding";
     var text = 'I pledge '+X+' to the cause of ' + cause;
     var url = 'https://greenpill.party/'
     document.location.href="https://twitter.com/intent/tweet?text=" +encodeURI(text)+ "&url=" + encodeURI(url);
