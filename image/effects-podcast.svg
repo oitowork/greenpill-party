@@ -1,0 +1,46 @@
+<svg class="podcasts" width="1775" height="1108" viewBox="0 0 1775 1108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="triagleYellow" d="M870 206L897.91 295.95L932.03 226.16L870 206Z" fill="#FFEEA8" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleDark"  d="M802.013 593.926L812.501 699.836L866.111 630.328L802.013 593.926Z" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleDark" d="M87.1787 540.893L3 552.616L132.509 465.242L87.1787 540.893Z" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleYellow" d="M1372.33 101.575L1297.25 141.41L1389.02 14.9776L1372.33 101.575Z" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleYellow" d="M778.01 914L681 957.76L763.98 986.36L778.01 914Z" fill="#FFEEA8" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleYellow" d="M193.364 22L122.38 201.522L266.47 133.767L193.364 22Z" fill="#FFCC00" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleYellow" d="M54.6465 980.454L152.294 1105.89L164.62 975.359L54.6465 980.454Z" fill="#FFEEA8" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleGreen" d="M1767.32 237.123L1671.25 278.575L1726.36 196.116L1767.32 237.123Z" fill="#5BF1CD" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleGreen" d="M712.017 36.7104L650.115 121.072L655.933 22.0652L712.017 36.7104Z" fill="#5BF1CD" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleGreen" d="M1484.08 980.972L1367.38 1077.5L1410.7 940.528L1484.08 980.972Z" fill="#5BF1CD" stroke="#0E0333" stroke-miterlimit="10"/>
+<path class="triagleYellow" d="M1737.64 677L1731.03 742.47L1670 750.71L1737.64 677Z" fill="#FFCC00" stroke="#0E0333" stroke-miterlimit="10"/>
+
+
+<style>
+    
+     .podcasts {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #02E2AC;
+    }
+
+    .triagleGreen {
+        animation: moveTriagle 13s ease-in infinite alternate;
+        
+    }
+
+    .triagleYellow {
+        animation: moveTriagle 13s ease-out infinite alternate;
+        
+    }
+
+    .triagleDark {
+        animation: moveTriagle 13s ease-in-out infinite alternate;
+    }
+    
+    @keyframes moveTriagle {
+        from {
+            transform: translateY(-554px);
+        }
+  }
+    
+</style>
+</svg>

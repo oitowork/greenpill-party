@@ -11,11 +11,12 @@ p {
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Abel', sans-serif;
-    max-width: 1600px;
+    font-family: Space Mono;
+    max-width: 1920px;
     margin: auto;
     background-color: #ffff;
     color: #0E0333;
@@ -46,12 +47,6 @@ body {
     }
 }
 
-
-nav {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
 
 a {
     outline: none;
@@ -235,6 +230,11 @@ h1{
     margin-right: 38px;
 }
 
+#podcast {
+    background-color: #ffff;
+    color: #000000;
+}
+
 /* End */
 
 /* GreenPill */
@@ -244,6 +244,10 @@ h1{
 
 .background-greenpill {
     background-image: url(../image/background-greenpill.svg);
+}
+
+.background-triangle {
+    background-image: url(../image/effects-podcast.svg);
 }
 
 /* Responsive Style */
@@ -290,11 +294,13 @@ h1{
     }
 
     .form {
-        padding: 0 2%;
+        padding: 0 1%;
     }
 
     .gitcoin-brand {
         padding-top: 16px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
 
     .form label {
@@ -319,3 +325,333 @@ h1{
         gap: 4px;
     }
 }
+
+/* start call action */
+.call-to-action {
+    display: flex;
+    padding: 20px;
+}
+
+
+.call-to-action.title {
+    font-size: 0.625rem;
+    color: #0E0333;
+
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.call-to-action.revert {
+    flex-direction: reverse;
+}
+
+.wrapper {
+    width: 25.5625rem;
+    height: 30.625rem;
+    margin-right: 19.6875rem;
+}
+
+.wrapper.nft {
+    width: 256px;
+    height: 256px;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.call-to-action button {
+    width: 250px;
+    height: 48px;
+    color: #E6FFF9;
+    font-weight: bold;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 184px;
+    height: 60px;
+    background: #02E2AC;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s;
+    margin-right: 55px;
+}
+
+.call-to-action button:hover {
+    filter: brightness(.96);
+    transform: translateY(-2px)
+}
+.call-action-wrapper-buttons {
+    display: flex;
+}
+.call-action-info h2{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* end call action */
+
+  nav {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  
+  .logo {
+    display: inline-block;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  .nav-item {
+      display: flex;
+  }
+  
+  .nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #0E0333;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .nav-item:hover a {
+    color: #02E2AC;
+
+  }
+  
+  .logo img {
+    vertical-align: middle;
+    width: 106.92px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .call-to-action.background {
+    background-color: #02E2AC;
+    flex-direction: row-reverse;
+  }
+
+  .call-to-action.background .call-action-box {
+    width: 465px;
+    margin-right: 18.5625rem;
+    margin-top: 5rem;
+  }
+
+  .call-action-info .title {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 91px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .call-to-action.background .call-action-wrapper-buttons {
+    padding: 0;
+    display: flex;
+  }
+
+  #book-section, #nft-section, #podcast-section {
+    margin-bottom: 14.375rem;
+  }
+
+  #book-section .wrapper  {
+    margin-right: 10em;
+  }
+
+  #book-section .title, #nft-section .title {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 91px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 643px;
+  }
+
+  #nft-section .call-action-box {
+    height: 168px;
+    width: 621px;
+    left: 293px;
+    top: 2969px;
+  }
+
+  section#nft-section {
+    display: flex;
+    justify-content: left;
+    margin-left: 170px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+#book-section .call-to-action {
+    flex-direction: row;
+}
+
+
+button a {
+    color: #fff;
+}
+
+#podcast a {
+    color: #000000;
+}
+
+@media only screen and (max-width: 768px) { 
+    .logo {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+    
+    .logo img {
+        width: 75px;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+    .navbar, .nav-item {
+        flex-direction: column;
+    }
+    .navbar__ToggleShow {
+        display: flex;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        margin-top: 30px;
+        font-size: 40px;
+        margin-right: 26px;
+    }
+
+    .hero-container {
+        margin-bottom: 0;
+    }
+
+    .call-to-action {
+        gap: 0;
+        padding: 0;
+    }
+
+    #book-section .wrapper {
+        margin: auto;
+    }
+
+    #book-section .call-to-action {
+        flex-direction: column-reverse;
+    }
+
+    .call-action-info {
+        margin-top: 20px;
+
+    }
+
+    #book-section .title, #nft-section .title {
+        width: auto;
+        line-height: 71px;
+    }
+
+    
+
+    section#nft-section{
+        justify-content: center;
+        margin-top: 48px;
+        margin-bottom: 200px;
+        margin-left: 50px;
+    }
+
+
+    .call-to-action.background {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper img {
+        height: 50%;
+    }
+
+    body {
+        font-size: 100%;
+    }
+
+    .call-action-box {
+        width: 350px;
+        margin-left: 70px;
+    }
+
+    .wrapper {
+        width: 50%;
+        height: 50%;
+    }
+
+    .call-to-action.background .call-action-box { 
+        width: auto;
+        margin: 40px;
+    }
+
+    .call-action-info .title {
+        line-height: 61px;
+    }
+
+    #nft-section  .call-action-box {
+        margin: auto;
+        width: auto;
+    }
+
+
+    .call-to-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #podcast-section .wrapper {
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+
+
+    #book-section, #nft-section, #podcast-section {
+        margin-bottom: 7.18rem;
+    }
+
+    .nav-item.navbar__ToggleShow {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+}
+
+
+  
+  

@@ -1,193 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@gitcoin">
-<meta name="twitter:creator" content="@owocki">
-<meta name="twitter:title" content="GreenPill.Party">
-<meta name="twitter:description" content="Build a more solarpunk future by getting Green Pilled, pledge to support public goods + join the Green Pill Party today.">
-<meta name="twitter:image" content="/image/twitter.png">
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>GreenPill.Party</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://s.gitcoin.co/static/v2/images/favicon.ico/apple-touch-icon.486115005c66.png"
-    />
-    <link rel="stylesheet" href="style/landing.css" />
-    <link rel="icon" href="image/greenpill-socialimage.svg" type="image/gif" />
-    <!-- https://ogp.me/ -->
-    <meta property="og:title" content="greenpill.party" />
-    <meta property="og:type" content="blockchain" />
-    <meta property="og:url" content="https://greenpill.party" />
-    <meta
-      property="og:image"
-      content="https://greenpill.party/images/social-image.jpg"
-    />
-  </head>
-  <body>
-    <main>
-      <section class="coordination-hero background-bubble">
-        <div class="hero-container">
-          <div class="coordination-party-hero-description">
-            <h1 class="title">Take the Green Pill</h1>
-          </div>
-          <div class="green-pill">
-            <img src="image/greenpill-socialimage.svg" />
-          </div>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@gitcoin">
+  <meta name="twitter:creator" content="@owocki">
+  <meta name="twitter:title" content="GreenPill.Party">
+  <meta name="twitter:description"
+    content="Build a more solarpunk future by getting Green Pilled, pledge to support public goods + join the Green Pill Party today.">
+  <meta name="twitter:image" content="/image/twitter.png">
+
+
+  <title>GreenPill.Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://s.gitcoin.co/static/v2/images/favicon.ico/apple-touch-icon.486115005c66.png" />
+  <link rel="stylesheet" href="style/landing.css" />
+  <link rel="icon" href="image/greenpill-socialimage.svg" type="image/gif" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- https://ogp.me/ -->
+  <meta property="og:title" content="greenpill.party" />
+  <meta property="og:type" content="blockchain" />
+  <meta property="og:url" content="https://greenpill.party" />
+  <meta property="og:image" content="https://greenpill.party/images/social-image.jpg" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="/" class="logo">
+      <img src="/image/logo-greenpill.svg" alt="greePill logo">
+    </a>
+    <div class="nav-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-green-pill">
+    </ul>
+  </nav>
+  <main>
+    <section class="coordination-hero background-bubble">
+      <div class="hero-container">
+        <div class="coordination-party-hero-description">
+          <h1 class="title">Take the Green Pill</h1>
         </div>
-      </section>
-    </main>
-    <footer class="footer-container background-greenpill">
-      <section class="green-pill-form-section">
-        <div>
-          <h1>Make a Pledge:</h1 >
-          <form class="form">
-            <label for="percentage">I've been GreenPilled! </label>
-            <label for="percentage">I Pledge</label>
-            <input
-              type="text"
-              id="percentage"
-              name="percentage"
-              placeholder="25%"
-              value="25%"
-            /> 
-            <label for="percentage">of my Wealth Above </label>
-            <input
-              type="text"
-              id="amount"
-              name="amount"
-              placeholder="$10mm"
-              value="$10mm"
-            />
-            <label for="cause">to the cause of</label>
-            <input
-              type="text"
-              id="cause"
-              name="cause"
-              placeholder="Public Goods Funding"
-              value="Public Goods Funding"
-            />
-
-            <div class="buttons-green-pill">
-              <button type="button">
-                <img src="image/arrow-green-pill.svg" alt="arrow" />
-                <a href="javascript:alert('This is a simple tool created by the Gitcoin community to facilitate pledges to support a more Solarpunk world.');">What’s this?</a>
-              </button>
-
-              <button id="target" type="button"
- data-kinetics-attraction="" data-kinetics-attraction-chance=".99" data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="1.7" 
-
-              >
-                <img src="image/tweet-icon.svg" alt="tweet" />
-                <p>Tweet</p>
-              </button>
-            </div>
-          </form>
+        <div class="green-pill">
+          <img src="image/greenpill-socialimage.svg" />
         </div>
-      </section>
-      <div class="gitcoin-brand">
-        <a href="https://gitcoindao.com">
-          <img
-            src="/image/gitcoindao_sign.svg"
-            alt="gitcoinDAO"
-          />
-        </a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <a href="https://t.me/+g9TM8i7GpxAzMGUx">Join the Telegram</a>
       </div>
-    </footer>
-  </body>
+    </section>
+
+
+    <!-- call action book -->
+    <section id="book-section" class='call-to-action'>
+      <div class='wrapper'>
+        <img src="image/greenpill-book.png" alt="Green Pilled book" />
+      </div>
+      <div class="call-action-box">
+        <div class="call-action-info">
+          <h1 class="title">Purchase the Green Pill book</h1>
+        </div>
+        <div class="call-action-wrapper-buttons">
+          <button id="hardcover" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+            data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
+            data-kinetics-attraction-radius="1.7">
+            <a target="_blank"
+              href="https://www.amazon.com.br/Infinite-Machine-Crypto-hackers-Building-Internet/dp/0062886142/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1644880269&sr=8-7">
+              <p>Hardcover</p>
+            </a>
+          </button>
+          <button id="epub" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+            data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
+            data-kinetics-attraction-radius="1.7">
+            <a target="_blank"
+              href="https://www.amazon.com.br/Infinite-Machine-Crypto-hackers-Building-Internet-ebook/dp/B07X8HS2WC/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1644880269&sr=8-7">
+              <p>Ebook</p>
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end call action book  -->
+
+  </main>
+  <!-- call action podcast -->
+  <section id="podcast-section" class='call-to-action background background-triangle'>
+
+    <div class='wrapper'>
+      <img src="image/podcast-thumbnail.png" alt="Green Pilled book" />
+    </div>
+    <div class="call-action-box">
+      <div class="call-action-info">
+        <h1 class="title">Subscribe to the greenpill podcast</h1>
+      </div>
+      <div class="call-action-wrapper-buttons">
+        <button id="podcast" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+          data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
+          data-kinetics-attraction-radius="1.7">
+          <a href="https://podcasts.apple.com/us/podcast/greenpill/id1609313639"target="_blank"><p>listen</p></a>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- end call action podcast -->
+  <!-- call action NFT -->
+  <!-- <section id="nft-section" class="call-to-action">
+    <div class="call-action-box">
+      <div class="call-action-info">
+        <h1 class="title">Purchase the Green Pill NFT</h1>
+      </div>
+      <div class="call-action-wrapper-buttons">
+        <button id="nft" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+          data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="1.7"
+          bubbleToGo=>
+          <p>link</p>
+        </button>
+      </div>
+    </div>
+  </section> -->
+  <!-- end call action book  -->
+  <footer class="footer-container background-greenpill">
+    <section id="pledge-section" class="green-pill-form-section">
+      <div>
+        <h1>Make a Pledge:</h1>
+        <form class="form">
+          <label for="percentage">I've been GreenPilled! </label>
+          <label for="percentage">I Pledge</label>
+          <input type="text" id="percentage" name="percentage" placeholder="1%" value="1%" />
+          <!-- <input type="text" id="amount" name="amount" placeholder="$10mm" value="$10mm" /> -->
+          <label for="cause">of my net worth to the cause of</label>
+          <input type="text" id="cause" name="cause" placeholder="Public Goods Funding" value="Public Goods Funding" disabled />
+
+          <div class="buttons-green-pill">
+            <button type="button">
+              <img src="image/arrow-green-pill.svg" alt="arrow" />
+              <a
+                href="javascript:alert('This is a simple tool created by the Gitcoin community to facilitate pledges to support a more Solarpunk world.');">What’s
+                this?</a>
+            </button>
+
+            <button id="target" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+              data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone"
+              data-kinetics-attraction-radius="1.7">
+              <img src="image/tweet-icon.svg" alt="tweet" />
+              <p>Tweet</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div class="gitcoin-brand">
+      <a href="https://gitcoindao.com">
+        <img src="./image/gitcoindao_sign.svg" alt="gitcoinDAO" />
+      </a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; <a href="https://t.me/+g9TM8i7GpxAzMGUx">Join the Telegram</a>
+    </div>
+  </footer>
+</body>
+
 </html>
 
 <script>
+  document.addEventListener('DOMContentLoaded', function () {
 
+    const params = {
+      "debug": false,
+      "spring": {
+        "tension": 8,
+        "friction": 10,
+        "randomTension": 50,
+        "randomFriction": -18,
+        "extendedRestDelay": 50
+      },
+      "canvas": {
+        "handlePosition": true
+      },
+      "particles": {
+        "count": 24,
+        "sides": {
+          "min": 3,
+          "max": 5
+        },
+        "sizes": {
+          "min": 1,
+          "max": 1
+        },
+        "rotate": {
+          "speed": 1,
+          "direction": null
+        },
+        "mode": {
+          "type": "wind-from-left",
+          "speed": 0,
+          "boundery": "endless"
+        },
+        "parallex": {
+          "layers": 3,
+          "speed": 0.15
+        },
+        "attract": {
+          "chance": 0.5,
+          "force": 1,
+          "grow": 2,
+          "size": null,
+          "type": "static",
+          "speed": 1.5,
+          "direction": -1,
+          "radius": 1
+        },
+        "fill": {
+          "colors": ["#f7ce46", "#67dfaf"],
+          "toColors": ["#f7ce46", "#67dfaf"],
+          "opacity": 1
+        },
+        "stroke": {
+          "colors": [],
+          "toColors": [],
+          "width": [],
+          "opacity": 1
+        },
 
-document.getElementById('target').onclick = function(e){
-  var X = document.getElementById('percentage').value;
-  var cause = document.getElementById('cause').value;
-  var Y = document.getElementById('amount').value;
-  var text = 'I pledge '+X+' of my wealth above '+Y+' to the cause of ' + cause;
-  var url = 'https://greenpill.party/'
-  document.location.href="https://twitter.com/intent/tweet?text=" +encodeURI(text)+ "&url=" + encodeURI(url);
-}
+      }
+    };
 
+    const kinetics = new Kinetics(params).interactionHook();
 
-</script>
-
-<script>
-
-document.addEventListener('DOMContentLoaded', function() {
-
-const params = {
-  "debug": false,
-  "spring": {
-    "tension": 8,
-    "friction": 10,
-    "randomTension": 50,
-    "randomFriction": -18,
-    "extendedRestDelay": 50
-  },
-  "canvas": {
-    "handlePosition": true
-  },
-  "particles": {
-    "count": 24,
-    "sides": {"min": 3, "max": 5},
-    "sizes": {"min": 1, "max": 1},
-    "rotate": {"speed": 1, "direction": null},
-    "mode": {
-      "type": "wind-from-left",
-      "speed": 0,
-      "boundery": "endless"
-    },
-    "parallex": {
-      "layers": 3,
-      "speed": 0.15
-    },
-    "attract": {
-      "chance": 0.5,
-      "force": 1,
-      "grow": 2,
-      "size": null,
-      "type": "static",
-      "speed": 1.5,
-      "direction": -1,
-      "radius": 1
-    },
-    "fill": { 
-      "colors": ["#f7ce46", "#67dfaf"], 
-      "toColors": ["#f7ce46", "#67dfaf"],
-      "opacity": 1
-    },
-    "stroke": { 
-      "colors": [], 
-      "toColors": [],
-      "width":[],
-      "opacity": 1
-    },
-    
-  }
-};
-
-  const kinetics = new Kinetics(params).interactionHook();
-
-});
-
-
+  });
 </script>
 
 <script src="https://unpkg.com/@drum-n-bass/kinetics"></script>
@@ -196,9 +242,78 @@ const params = {
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPDC59RT5Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
   gtag('js', new Date());
 
   gtag('config', 'G-DPDC59RT5Y');
 </script>
 
+<!-- menu builder -->
+<script>
+  const navLinks = [{
+    "greenpill": [{
+        title: "Book",
+        link: "#book-section",
+      },
+      {
+        title: "Podcast",
+        link: "#podcast-section",
+      },
+      {
+        title: "pledge",
+        link: "#pledge-section",
+      }
+    ]
+  }];
+
+  let navRender = '';
+
+  navLinks.forEach(function (element) {
+    let nav = element.greenpill
+
+    nav.forEach(function (route) {
+      navRender += ` 
+              <li class="nav-item">
+                <a class="link-landing" href="${route.link}" 
+                data-kinetics-attraction="" 
+                data-kinetics-attraction-chance=".99"
+                data-kinetics-attraction-grow="20" 
+                data-kinetics-attraction-type="drone"
+                data-kinetics-attraction-radius="1.7"
+                >${route.title}</a>
+              </li>
+              `
+
+    })
+    navRender += '<br />'
+  })
+  document.getElementById('nav-green-pill').innerHTML = navRender;
+</script>
+<script>
+  function classToggle() {
+    const navs = document.querySelectorAll('.nav-item')
+    navs.forEach(nav => nav.classList.toggle('navbar__ToggleShow'));
+    console.log(navs.length)
+  }
+
+  document.querySelector('.nav-toggle')
+    .addEventListener('click', classToggle);
+</script>
+
+
+<script>
+
+
+  document.getElementById('target').onclick = function(e){
+    var X = document.getElementById('percentage').value;
+    var cause = "Public Goods Funding";
+    var text = 'I pledge '+X+' to the cause of ' + cause;
+    var url = 'https://greenpill.party/'
+    document.location.href="https://twitter.com/intent/tweet?text=" +encodeURI(text)+ "&url=" + encodeURI(url);
+  }
+  
+  
+</script>
