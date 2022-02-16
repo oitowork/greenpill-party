@@ -52,14 +52,20 @@
       <div class="hero-container">
         <div class="coordination-party-hero-description">
           <h1 class="title">Take the Green Pill</h1>
+          <div class="call-action-wrapper-buttons">
+            <button id="greenpill" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+              data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="1.7"
+              bubbleToGo=>
+              <p>pledge</p>
+            </button>
+          </div>
         </div>
         <div class="green-pill">
           <img src="image/greenpill-socialimage.svg" />
         </div>
       </div>
     </section>
-  </main>
-  <!-- call action book -->
+     <!-- call action book -->
   <section id="book-section" class='call-to-action'>
     <div class='wrapper-book'>
       <div class='book-image'></div>
@@ -111,21 +117,23 @@
   </section>
   <!-- end call action podcast -->
   <!-- call action NFT -->
-  <!-- <section id="nft-section" class="call-to-action">
+  <section id="telegram-section" class="call-to-action">
     <div class="call-action-box">
       <div class="call-action-info">
-        <h1 class="title">Purchase the Green Pill NFT</h1>
+        <h1 class="title">Join the conversation</h1>
       </div>
       <div class="call-action-wrapper-buttons">
-        <button id="nft" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
+        <button id="telegram" type="button" data-kinetics-attraction="" data-kinetics-attraction-chance=".99"
           data-kinetics-attraction-grow="20" data-kinetics-attraction-type="drone" data-kinetics-attraction-radius="1.7"
           bubbleToGo=>
-          <p>link</p>
+          <p>telegram</p>
         </button>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- end call action book  -->
+  </main>
+ 
   <footer class="footer-container background-greenpill">
     <section id="pledge-section" class="green-pill-form-section">
       <div>
@@ -320,11 +328,19 @@
   
 
 document.getElementById('hardcover').onclick = function(e){
-    document.location.href = "https://www.blurb.com/bookstore/invited/9477673/0e3bf497ee09bcbc86c73f367b12bb6fa5fa0ebd";
+  document.location.href = "https://www.blurb.com/bookstore/invited/9477673/0e3bf497ee09bcbc86c73f367b12bb6fa5fa0ebd";
 }
 
 document.getElementById('epub').onclick = function(e){
-    document.location.href = "https://store.gitcoin.co/products/green-pill-book-digital-edition";
+  document.location.href = "https://store.gitcoin.co/products/green-pill-book-digital-edition";
+}
+
+document.getElementById('telegram').onclick = function(e) {
+  window.open("https://t.me/+g9TM8i7GpxAzMGUx", "_blank");
+}
+
+document.getElementById('greenpill').onclick = function(e) {
+  document.location.href = '#pledge-section'
 }
   
 </script>

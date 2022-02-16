@@ -89,7 +89,7 @@ h1{
     font-size: 64px;
     color: #0E0333;
     text-align: left;
-    margin-bottom: 4px;
+    margin-bottom: 34px;
     line-height: 130%;
 }
 
@@ -398,7 +398,7 @@ h1{
 
 }
 
-.call-to-action button {
+.call-to-action button, .coordination-party-hero-description button {
     width: 250px;
     height: 48px;
     color: #E6FFF9;
@@ -487,6 +487,12 @@ h1{
     margin-top: 5rem;
   }
 
+  #telegram-section .call-action-box {
+    width: 465px;
+    margin-left: 7rem;
+    margin-top: 2.5rem;
+  }
+
   .call-action-info .title {
     font-family: Space Mono;
     font-style: normal;
@@ -500,8 +506,8 @@ h1{
     display: flex;
   }
 
-  #book-section, #nft-section, #podcast-section {
-    margin-bottom: 14.375rem;
+  #book-section, #nft-section, #podcast-section, #telegram-section {
+    margin-bottom: 7rem;
   }
 
   #book-section .wrapper-book  {
