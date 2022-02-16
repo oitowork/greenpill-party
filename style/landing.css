@@ -234,6 +234,20 @@ h1{
     color: #000000;
 }
 
+#telegram-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#telegram-section .call-action-wrapper-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#telegram-section .call-action-info .title {
+    text-align: center;
+}
 /* End */
 
 /* GreenPill */
@@ -260,8 +274,6 @@ h1{
   }
 
   .podcast-image:hover {
-    transition: all .8s ease;
-    -webkit-transition: all .8s ease;
     background-image: url(../image/podcast.svg);
     
   }
@@ -280,8 +292,6 @@ h1{
   
 
   .book-image:hover {
-    transition: all .8s ease;
-    -webkit-transition: all .8s ease;
     background: url("/image/book.svg") no-repeat;
   }
 
@@ -489,7 +499,6 @@ h1{
 
   #telegram-section .call-action-box {
     width: 465px;
-    margin-left: 7rem;
     margin-top: 2.5rem;
   }
 
