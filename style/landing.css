@@ -91,7 +91,7 @@ h1{
 
 .coordination-party-hero-description {
     width: 472px;
-    margin: 0 auto;
+    margin: auto auto auto 14.5625rem;
 }
 
 .coordination-party-hero-description .title {
@@ -254,11 +254,11 @@ h1{
 
 #telegram-section .call-action-wrapper-buttons {
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 #telegram-section .call-action-info .title {
-    text-align: left;
+    text-align: center;
 }
 /* End */
 
@@ -809,11 +809,7 @@ button a {
     }
 
     #telegram-section {
-        justify-content: left;
-    }
-
-    #telegram-section .call-action-box {
-        margin-left: 14.5625rem;
+        justify-content: center;
     }
 }
 @media (min-width:1440px) { 
