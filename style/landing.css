@@ -279,33 +279,23 @@ h1{
 .podcast-image {
     width: 628px;
     height: 628px;
-    background-image: url(../image/podcast-thumbnail.svg);
+    background-image: url(../image/podcast.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
   }
-
-  .podcast-image:hover {
-    background-image: url(../image/podcast.svg);
-    
-  }
-
 
   .book-image {
     max-width: 100%;
     width: 535.51px;
     height: 586.94px;
     background-size: 100%;
-    background: url("/image/image-book.png");
+    background: url("/image/book.svg");
     background-size:contain;
     background-position:center;
     background-repeat: no-repeat;
   }
   
-
-  .book-image:hover {
-    background: url("/image/book.svg") no-repeat;
-  }
 
 /* Responsive Style */
 @media (max-width: 1280px) {
@@ -406,7 +396,6 @@ h1{
 .wrapper {
     width: 25.5625rem;
     height: 30.625rem;
-    margin-right: 19.6875rem;
 }
 
 .wrapper.nft {
@@ -676,8 +665,7 @@ button a {
     }
 
     .wrapper {
-        width: 50%;
-        height: 50%;
+        width: 100%;
     }
 
     .call-to-action.background .call-action-box { 
@@ -700,12 +688,6 @@ button a {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
-
-    #podcast-section .wrapper {
-        width: auto;
-        height: auto;
-        margin: auto;
     }
 
 
@@ -869,7 +851,6 @@ button a {
     .hero-container {
         font-size: 100%;
         width: 100%;
-        align-items: initial;
         margin: 0;
     }
 
@@ -965,13 +946,21 @@ button a {
         max-width: 50%;
     }
 
+    .wrapper {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
     #podcast-section .podcast-image{
-        max-width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #podcast-section .wrapper {
         justify-content: center;
         display: flex;
-        flex-direction: column;
+        margin-left: 4rem;
     }
 
     .call-to-action.background .call-action-box { 
