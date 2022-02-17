@@ -297,6 +297,16 @@ h1{
   }
   
 
+  .link-preview {
+    color:rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 230px
+}
+
 /* Responsive Style */
 @media (max-width: 1280px) {
 
@@ -384,7 +394,6 @@ h1{
 .call-to-action.title {
     font-size: 0.625rem;
     color: #0E0333;
-
     border: 1px solid #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -582,10 +591,6 @@ button a {
     
     .logo img {
         width: 75px;
-    }
-
-    .navbar {
-        margin-bottom: 20px;
     }
 
     .navbar, .nav-item {
@@ -806,9 +811,6 @@ button a {
     body {
         overflow-x: hidden;
     }
-    #book-section .title, #nft-section .title {
-        width: auto;
-    }
 
     #book-section .wrapper-book {
         margin-left: 2rem;
@@ -868,10 +870,6 @@ button a {
         margin: 0;
         display: flex;
         justify-content: center;
-    }
-
-    #book-section .title {
-        width: auto;
     }
 
     #book-section .call-action-box {
@@ -943,7 +941,7 @@ button a {
     }
 
     #book-section .book-image {
-        max-width: 50%;
+        max-width: 70%;
     }
 
     .wrapper {
@@ -983,6 +981,30 @@ button a {
     #telegram-section button {
         margin-right: 0 ;
     }
+
+    .link-preview {
+        color:rgba(0, 0, 0, 0.25);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        margin-right: 100px;
+        margin-top: 23px;
+    }
     
+
+    .call-action-wrapper-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .call-action-info {
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        width: 100%;
+        padding: 0 10px ;
+    }
 
 }
