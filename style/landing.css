@@ -311,6 +311,11 @@ h1{
     margin-right: 230px
 }
 
+button#greenpill:hover {
+    filter: brightness(.96);
+    transform: translateY(-2px)
+}
+
 /* Responsive Style */
 @media (max-width: 1280px) {
 
@@ -346,6 +351,7 @@ h1{
     .coordination-party-hero-description {
         width: 100%;
         padding: 0 4%;
+        margin: 0;
         
         
     }
